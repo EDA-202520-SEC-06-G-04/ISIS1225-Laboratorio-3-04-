@@ -37,11 +37,10 @@ def add_first(my_list, element):
     my_list['size'] += 1
     return my_list
 
-
-
-
+def add_last(my_list, element):
     
-def add_last():
-    pass
-    
+    m= my_list["element"]
+    m.append("element")
+    my_list["size"] +=1
+    return my_list
     
