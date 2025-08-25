@@ -22,9 +22,6 @@ def is_present(my_list, element, cmp_function):
             if keyexist:
                 return keypos
     return -1 
-
-
-        
     
 
 def new_list():
@@ -44,3 +41,57 @@ def add_last(my_list, element):
     my_list["size"] +=1
     return my_list
     
+def is_empty(my_list):
+    
+    if len(my_list)!=[]:
+        return False
+    else:
+        return True
+
+def last_element(my_list):
+    
+    if my_list !=[]:
+       m= my_list[-1]
+       return m
+    else:
+        return "IndexError: list index out of range"
+    
+def delete_element(my_list, pos):
+    pass
+
+def remove_first(my_list):
+    if my_list !=[]:
+        m= my_list.remove (0)
+        return m
+    else:
+        return "IndexError: list index out of range"
+    
+def remove_last(my_list):
+    if my_list !=[]:
+        m= my_list.remove (-1) 
+        return m
+    else:
+        return "IndexError: list index out of range"
+
+def insert_element(my_list, element, pos):
+    return(al.insert_element(my_list, element, pos))
+
+
+def change_info(my_list, pos, new_info):
+    if pos in my_list:
+      m=my_list[pos:new_info]
+      return m
+    else: 
+      return "IndexError: list index out of range"
+
+def exchange(my_list, pos_1, pos_2):
+    if pos_1 or pos_2 not in my_list:
+       return "IndexError: list index out of range"
+    else:
+       return (al.exchange(my_list, pos_1, pos_2))
+
+def sub_list(my_list, pos_i, num_elements):
+    if pos_1 not in my_list:
+       return "IndexError: list index out of range"
+    else:
+       return (al.sub_list(my_list, pos_i, num_elements)) 

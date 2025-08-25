@@ -32,10 +32,11 @@ def is_present(my_list, element, cmp_function):
     return count
 
 #Punto tabla parte de abajo:
-def is_empty(newlist):
-    if new_list == []:
-        resp = "La lista esta vacia"
-    return resp
+def is_empty(my_list):
+    if my_list == []:
+        return True
+    else:
+        return False
 
 def size(newlist):
     """  
@@ -60,7 +61,7 @@ def delete_element(newlist, palabra_clave,elemento):
                 new_list.remove(elemento)
     return elemento
 
-def remove_first(newlist)
+def remove_first(newlist):
     if len == []:
         resp = "No hay nada que eliminar en una lista vacia"
     else:
@@ -79,7 +80,7 @@ def insert_element(newlist,elemento): #Revisar esta, no dice si es un elemento e
     newlist.append(elemento)
     return newlist
 
-def change_info():
+def change_info(my_list,):
     for i in new_list:
         if new_list[i] == elemento:
             new_list[i] = info
